@@ -1,0 +1,134 @@
+html {
+	height: 100%;
+	font-family: SnellRoundhandW01-Script;
+}
+
+body {
+	background-color: #FFFFFF;
+	margin: 0;
+	min-height: 100%;
+	position: relative;
+	width: 100%;
+	color: black;
+	font-size: 29px;
+	margin-top: 50px;
+}
+
+a {
+	color: black;
+	font-weight: bold;
+}
+
+#elements {
+	height:0;
+	left:-9999px;
+	position:absolute;
+	opacity:0;
+	top:-9999px;
+	width:0;
+}
+
+#wrapper, #cover {
+	margin: auto;
+	height: 500px;
+	width: 500px;
+	position: relative;
+}
+
+#cover {
+    display: table-cell;
+    vertical-align: middle;
+	box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+}
+
+#image {
+	height: 100%;
+	width: 100%;
+    margin: auto;
+    display: none;
+}
+
+#drake {
+	/*background-image: url(../images/drake.png);*/
+	background: url(../images/drake.png);
+	background-size: 100%;
+	cursor: move;
+	position: absolute;
+	left: 0;
+	top: 0;
+	min-height: 32px;
+	min-width: 20px;
+	max-height: 245px;
+	max-width: 151px;
+	height: 81px;
+	width: 50px;
+	z-index: 10;
+	display: none;
+}
+
+#social {
+	bottom: 0;
+	font-size: 14px;
+	position: absolute;
+	width: 100%;
+}
+
+#social .link {
+	float: right;
+	margin: 3px;
+}
+
+#upload-info {
+	border-radius: 3px;
+	bottom: 0;
+	margin: auto;
+	position: absolute;
+    text-align: center;
+	transition: opacity 0.2s;
+	height: 500px;
+	width: 500px;
+}
+
+#upload-info p {
+    display: table-cell;
+    vertical-align: middle;
+    width: 500px;
+    height: 500px;
+    position: relative;
+}
+
+#upload-info a {
+	position: relative;
+	z-index: 11;
+}
+
+#upload-box {
+	background: rgba(0, 0, 0, 0.1);
+	border-radius: 3px;
+	bottom: 0;
+    line-height: 50px;
+	margin: auto;
+	opacity: 0;
+	position: absolute;
+    text-align: center;
+	transition: opacity 0.2s;
+	height: 500px;
+	width: 500px;
+	left: -3px;
+    top: -3px;
+	z-index: 5;
+}
+
+@font-face {font-family: "SnellRoundhandW01-Script";
+	src: url("http://db.onlinewebfonts.com/t/f8deb3c1a029ec56b15bb462c1518f07.eot");
+	src: url("http://db.onlinewebfonts.com/t/f8deb3c1a029ec56b15bb462c1518f07.eot?#iefix") format("embedded-opentype"),
+	url("http://db.onlinewebfonts.com/t/f8deb3c1a029ec56b15bb462c1518f07.woff2") format("woff2"),
+	url("http://db.onlinewebfonts.com/t/f8deb3c1a029ec56b15bb462c1518f07.woff") format("woff"),
+	url("http://db.onlinewebfonts.com/t/f8deb3c1a029ec56b15bb462c1518f07.ttf") format("truetype"),
+	url("http://db.onlinewebfonts.com/t/f8deb3c1a029ec56b15bb462c1518f07.svg#SnellRoundhandW01-Script") format("svg");
+}
+
+/* Override */
+.ui-icon, .ui-widget-content .ui-icon {
+	background-image: url(../images/ui-icons.png);
+}
